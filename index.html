@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="content">
+        <form action="" method="post" class="form">
+            <div class="form-wrapper">
+                <div class="email">
+                    Email: <input id="email" name="email" type="email" pattern="^[A-za-z0-9\.]+@[A-za-z0-9\.]+\.*[A-za-z\.]*$">
+                    <div class="email-validation-message"></div>
+                </div>
+                <div class="country">
+                    Country: <input id="country" name="country" type="text" pattern="^[A-Za-z]+$" minlength="1" maxlength="60">
+                    <div class="country-validation-message"></div>
+                </div>
+                <div class="pincode">
+                    PinCode: <input id="pincode" name="pincode" type="number" min="100000" max="999999">
+                    <div class="pincode-validation-message""></div>
+                </div>
+                <div class="password">
+                    Password: <input id="password" name="password" type="password" >
+                    <div class="password-validation-message""></div>
+                </div>
+                <div class="confirmation">
+                    Confirmation: <input id="confirmation" name="confirmation" type="password">
+                    <div class="confirmation-validation-message"></div>
+                </div>
+                <button id="submit-button" type="submit">OK</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
