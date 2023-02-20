@@ -1,7 +1,40 @@
-.form-wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 4px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.purple-button {
+  appearance: none;
+  background: #4338ca;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 500;
+  line-height: 1;
+  padding: 1em 1.5em;
+}
+
+.invalid {
+    border-bottom: 2px solid red;
+}
+
+.valid {
+    border-bottom: 2px solid green;
 }

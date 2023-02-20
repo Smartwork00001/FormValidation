@@ -10,29 +10,29 @@
 </head>
 <body>
     <div id="content">
-        <form action="" method="post" class="form">
+        <form id="validationForm" action="" method="post" class="form">
             <div class="form-wrapper">
                 <div class="email">
-                    Email: <input id="email" name="email" type="email" pattern="^[A-za-z0-9\.]+@[A-za-z0-9\.]+\.*[A-za-z\.]*$">
+                    Email: <input id="email" name="email" type="email" pattern="^[A-za-z0-9\.]+@[A-za-z0-9\.]+\.*[A-za-z\.]*$" required>
                     <div class="email-validation-message"></div>
                 </div>
                 <div class="country">
-                    Country: <input id="country" name="country" type="text" pattern="^[A-Za-z]+$" minlength="1" maxlength="60">
+                    Country: <input id="country" name="country" type="text" pattern="^[A-Za-z]+$" minlength="1" maxlength="60" required>
                     <div class="country-validation-message"></div>
                 </div>
                 <div class="pincode">
-                    PinCode: <input id="pincode" name="pincode" type="number" min="100000" max="999999">
+                    PinCode: <input id="pincode" name="pincode" type="number" min="100000" max="999999" required>
                     <div class="pincode-validation-message""></div>
                 </div>
                 <div class="password">
-                    Password: <input id="password" name="password" type="password" >
+                    Password: <input id="password" name="password" type="password" required>
                     <div class="password-validation-message""></div>
                 </div>
                 <div class="confirmation">
-                    Confirmation: <input id="confirmation" name="confirmation" type="password">
+                    Confirmation: <input id="confirmation" name="confirmation" type="password" required>
                     <div class="confirmation-validation-message"></div>
                 </div>
-                <button id="submit-button" type="submit">OK</button>
+                <button class="purple-button" id="submit-button" type="submit">OK</button>
             </div>
         </form>
     </div>
